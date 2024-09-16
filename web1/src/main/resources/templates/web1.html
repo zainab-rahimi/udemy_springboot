@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Web1</title>
+    <style>
+        *{
+            font-family:sans-serif, Helvetica, Arial;
+        }
+
+        p{
+            font-style: italic;
+        }
+        h1{
+            color: cadetblue;
+        }
+        .title_box {
+            border:black 2px solid;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 0.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="title_box">
+    Here is still testing Spring boot application using the template
+<h1  th:text="${message}"> This is heading 2
+
+</h1>
+    </div>
+<!-- the message here should be defined in controller -->
+<p th:text="${msg2}"> this is the alternative msg
+
+</p>
+
+
+</body>
+</html>
